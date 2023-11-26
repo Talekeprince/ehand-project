@@ -1,0 +1,261 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    text-decoration: none;
+}
+:root{
+    --secondaryTextColor:#1f242d;
+    --primaryTextColor:#0ef;
+    --tertiaryTextColor:#fafafa;
+    --secondaryBackgroundColor:#1f242d;
+    --primaryBackgroundColor:rgb(18, 113, 255);
+    --tertiaryBackgroundColor:orange;
+    --mainBorder: solid 2px grey;
+    --mainFontFamily: arial, helvetica, sans-serif;
+    --mainBorderRadius: 10px;
+    --mainFontSize:18px;
+    --mainBoxShadow: 0 0 7px #1f242d;
+    --fullWidthSpace: 100%;
+    --navBackgroundColor: #fafafa;
+}
+header{
+    position: fixed;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 5%;
+    box-shadow: var(--mainBoxShadow);
+    width: var(--fullWidthSpace);
+    z-index: 1;
+    background-color: var(--navBackgroundColor);
+    color: var(--primaryTextColor);
+}
+#e{
+    color: var(--secondaryTextColor);
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content:space-between ;
+    color:var(--secondaryTextColor) ;
+    display: contents;
+    margin: 0px 10%;
+}
+nav a{
+    color: var(--secondaryTextColor);
+    font-weight: 600;
+}
+#menu-icon{
+   visibility: hidden;
+   color: var(--secondaryTextColor);
+}
+@media screen and (max-width: 800px){
+    #menu-icon{
+   visibility: visible;
+}
+nav{
+    color:var(--primaryTextColor) ;
+    display: none;
+    align-items: center;
+    justify-content:space-between ;
+    color:var(--primaryTextColor) ;
+}
+}
+
+/* ============================ ABOUT US */
+#about-us{
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* ================ OUR PRODUCT */
+table{
+   margin: 10px 10%;
+}
+#products{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#products div{
+    margin: 10px;
+    /* box-shadow: var(--mainBoxShadow); */
+    text-align: center;
+}
+#products div img{
+    border-radius: var(--mainBorderRadius);
+       box-shadow: var(--mainBoxShadow);
+}
+#products div span{
+    color: grey;
+    padding: 5px 10px;
+}
+#products div button{
+    width: 100%;
+    border: none;
+    color: var(--secondaryTextColor);
+    background-color: var(--primaryTextColor);
+    margin: 5px 0px;
+    border-radius: 3px;
+    font-weight: 600;
+}
+#recent-upload-header{
+    margin: 10px 10%;
+}
+#see-all-btn{
+    color: var(--tertiaryTextColor);
+    background-color: var(--primaryBackgroundColor);
+    margin: 0px 10%;
+    padding: 4px 6px;
+    border-radius: 3px;
+}
+#updload-doc{
+    padding: 5px;
+    font-weight: 600;
+    margin: 0px 10%;
+    border-radius: 3px;
+    border: solid 1px grey;
+}
+#sign-in-form{
+    text-align: center;
+    margin: 0px 10% auto;
+}
+
+#password-input,
+#input-name{
+    width: 300px;
+    border: none;
+    text-align: center;
+    background-color: white;
+    outline: none;
+    margin: 10px 0px;
+    padding: 10px;
+    box-shadow: 0 0 5px grey;
+}
+    #signin-input-field{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+@media screen and (max-width:800px){
+    #signin-input-field{
+    display: block;
+}
+}
+#submit-btn{
+    width: 300px;
+    background-color: rgb(255, 140, 0);
+    color: black;
+    border: none;
+    height: 40px;
+    border-radius: 5px;
+}
+#submit-btn:active{
+    transition: 0.1s ease;
+}
+#select-el{
+    width: 300px;
+    border: none;
+    box-shadow: 0 0 5px grey;
+    outline: none;
+}
+/* =========================== Contact form style  ==========================*/
+
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* ============ footer */
+#newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+}
+#newsletter input{
+    width: 300px;
+    border: none;
+    outline: none;
+    box-shadow: 0 0 5px #1f242d;
+    padding: 5px 10px;
+    text-align: center;
+}
+#foot-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 5%;
+}
+
+#foot-links a{
+    color: var(--primaryTextColor);
+}
+footer{
+    background-color:var(--secondaryBackgroundColor);
+    margin: 0px;
+    color: var(--tertiaryTextColor);
+}
+footer h3{
+    padding:20px 10%;
+    color: var(--tertiaryTextColor);
+    font-size: medium;
+}
+
+#emails-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    /* margin:10px 10%; */
+}
+#emails-display a{
+    text-decoration: underline;
+    color: var(--tertiaryTextColor);
+}
+#connect{
+    display: flex;
+    flex-direction: row;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 30px;
+}
+#contact-tel{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 700px){
+    #connect{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    justify-content: center;
+    gap: 10px;
+}
+#emails-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    margin:10px 10%;
+}
+}
+#copyright{
+    text-align: center;
+    padding: 20px;
+    color: grey;
+}
+#ehand{
+    color: #2b323d;
+    text-align: center;
+    font-size:40px;
+    font-family: sans-serif;
+}

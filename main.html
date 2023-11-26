@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="UB eHandout provides you with handouts and 
+    questions for all department">
+    <title>eHandout</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- ====================the header/ nav bar================== -->
+    <header id="header">
+        <h1 id="eHandout"><span id="e">eHand</span>out</h1>
+        <br>
+        <br>
+        <nav>
+            <a class="text-decoration-none" href="handout.html">Handouts</a>
+            <a class="text-decoration-none" href="Student.html">Students</a>
+            <a class="text-decoration-none" href="lecturer.html">Lecturers</a>
+            <a class="text-decoration-none" href="admin.html">Admins</a>
+            <a class="text-decoration-none" href="manager.html">Manager</a>
+            <a class="text-decoration-none" href="#about-us">About&nbsp;Us</a>
+            <a class="text-decoration-none" href="#contact">Contact&nbsp;Us</a>
+        </nav>
+        <div>
+            <i id="menu-icon" class="fa-solid fa-bars"></i>
+        </div>
+    </header>
+    <div id="home"></div>
+    <br>
+    <hr>
+    <br>
+    <!-- ========================== ABOUT US==================== -->
+    <section id="about-us">
+        <h2>About Us</h2>
+        <p>Welcome to UB eHandout, eHandout is an application that provides Students
+            in every department within each faculty with handouts and questions for
+            their various courses <a class="text-decoration-none" href="About.html">Learn&nbsp;more...</a>
+        </p>
+    </section>
+    <br>
+    <!-- ==========================RPRODUCTS ===================== -->
+    <div>
+        <h2 id="recent-upload-header">See recently uploaded handouts</h2>
+        <section id="products">
+            <div id="products">
+                <div>
+                    <img src="product/1.jfif" alt="">
+                    <br>
+                    <span>ENG 317 <span>27/10/2023</span></span>
+                    <br>
+                    <button>Purchase Handout</button>
+                </div>
+                <div>
+                    <img src="product/1.jfif" alt="">
+                    <br>
+                    <span>ENG 317 <span>27/10/2023</span></span>
+                    <br>
+                    <button>Purchase Handout</button>
+                </div>
+                <div>
+                    <img src="product/1.jfif" alt="">
+                    <br>
+                    <span>ENG 317 <span>21/11/2023</span></span>
+                    <br>
+                    <button>Purchase Handout</button>
+                </div>
+                <div>
+                    <img src="product/1.jfif" alt="">
+                    <br>
+                    <span>ENG 317 <span>11/10/2023</span></span>
+                    <br>
+                    <button>Purchase Handout</button>
+                </div>
+        </section>
+        <a class="text-decoration-none" href="" id="see-all-btn">See All</a>
+        <br>
+        <br>
+        <a id="updload-doc" class="text-decoration-none" href="">Upload my own Item</a>
+    </div>
+    <br>
+    <br>
+    <div id="sign"></div>
+    <div id="sign-in-form">
+        <p>Sign in or register to be able to purchase our product
+            and to communicate with your fellow course mates and
+            lecturers</p>
+        <h2 id="SignIn">SIGN IN AS</h2>
+        <br>
+        <select name="select" id="select-el">
+            <option value="As a Student">As a Student</option>
+            <option value="As a Student">As a Lecturer</option>
+        </select>
+        <br>
+        <br>
+        <div id="error" class="text-danger"></div>
+        <form action="" method="post">
+            <div id="signin-input-field">
+                <input type="text" type="text" name="Enter FullName" id="input-name" placeholder="Enter Full Name">
+                <br>
+                <input type="password" id="password-input" name="password" placeholder="Enter Password">
+            </div>
+            <br>
+            <button id="submit-btn">Submit</button>
+            <br>
+            <br>
+            <div>
+                <a href="">Forget Password</a>
+                <span>Am new here</span><a href="create.html"> Create an Account</a>
+            </div>
+        </form>
+    </div>
+    <br>
+    <br>
+    <hr>
+    <!-- ============================ footer contents -->
+    <footer>
+        <h3> - use links bellow for fast navigation</h3>
+        <div id="foot-links">
+            <a href="#home">Home</a>
+            <br>
+            <a href="#about-us">products</a>
+            <br>
+            <a href="#sign">Sign In</a>
+            <br>
+            <a href="create.html">Create an Account</a>
+            <br>
+            <a href="">Upload a Document</a>
+            <br>
+            <a href="admin.html">Admins</a>
+            <br>
+            <a href="lecturer.html">Lecturers</a>
+            <br>
+            <a href="student.html">Students</a>
+            <br>
+            <a href="">About Us</a>
+            <br>
+            <a href="terms.html">Terms and Policy</a>
+        </div>
+        <br>
+        <form id="newsletter" action="news.js" method="post">
+            <h3 id="subscribe">Subscribe to our Newsletter to get notify when new products are updated</h3>
+            <input type="email" name="email" placeholder="Enter Email Address">
+            <input id="subscrib-btn" class="bg-danger text-light" type="button" value="Subscribe">
+        </form>
+        <br>
+        <!-- <div id="contact-form">
+            <h3>-Contact Info</h3>
+            <form action="#" method="post">
+                <input type="email" name="email" id="email" placeholder="Enter Email">
+                <br>
+                <textarea name="textarea" id="textarea" cols="38" rows="3" placeholder="Write us message"></textarea>
+                <br>
+                <input class="bg-info text-dark" type="button" value="Send">
+            </form>
+        </div> -->
+        <h2 id="ehand">E-Handout</h2>
+        <div id="connect">
+            <div id="emails-display">
+                <h4 class="text-info">usefull Emails</h3>
+                    <a href="mailto:ehandoutsupportteam@gmail.com">ehandoutsupport@gmail.com</a>
+                    <a href="mailto:inf@eHandout.com">inf@eHandout.com</a>
+                    <a href="mailto:admin@ehandout.com">admin@ehandout.com</a>
+            </div>
+            <div id="contact-tel">
+                <h4 id="contact" class="text-info"> Contact Info:</h4>
+                <a class="text-light text-decoration-underline" href="tel:+237645687545">+237(645)-687-545</a>
+                <a class="text-light text-decoration-underline" href="tel:+237645687545">+237(645)-687-545</a>
+                <a class="text-light text-decoration-underline" href="tel:+237645687545">+237(645)-687-545</a>
+            </div>
+        </div>
+
+        <br>
+        <div id="copyright">
+            <p>Copyright &copy; 2023 Techritoma Training project, all right reserve</p>
+        </div>
+        <!-- <div id="d" style="margin-top: 50px;"></div> -->
+    </footer>
+</body>
+
+</html>
